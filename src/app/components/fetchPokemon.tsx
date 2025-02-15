@@ -21,15 +21,15 @@ export default async function Pokemon() {
 
       {/* map through list */}
       <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8">
-        <div className="bg-white shadow-md rounded-lg border border-indigo-800 m-3 p-6 w-48 text-center">
+        <div className="bg-indigo-300 shadow-md rounded-lg border border-indigo-800 m-3 p-6 w-48 text-center">
           <img
             src={data.sprites.front_default}
             alt="Pokemon Image"
             id="spriteImage"
-            className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"
+            className="w-24 h-24 bg-white rounded-full mx-auto mb-4"
           />
           <h2 className="text-lg font-semibold text-gray-800">{data.name}</h2>
-          <p className="text-sm text-gray-500">{data.weight}</p>
+          <p className="text-sm">{data.weight}</p>
         </div>
       </div>
     </>
